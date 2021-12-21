@@ -1,5 +1,5 @@
 
-name: Angular_01_test
+name: Angular_00_test
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -21,13 +21,11 @@ jobs:
       - uses: actions/setup-node@v2.5.0
         with:
           node-version: '12.x'
-      - name: Run Component Tests
+      - name: Run Karma Tests
         run: |
           npm install -g @angular/cli
           npm install
           ng test
-      - name: Run E2E Tests
-        run: |
           ng e2e
 
 

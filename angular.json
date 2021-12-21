@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular_01": {
+    "Angular_00": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Angular_01:build:production"
+              "browserTarget": "Angular_00:build:production"
             },
             "development": {
-              "browserTarget": "Angular_01:build:development"
+              "browserTarget": "Angular_00:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular_01:build"
+            "browserTarget": "Angular_00:build"
           }
         },
         "test": {
@@ -107,11 +107,11 @@
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "Angular_01:serve"
+            "devServerTarget": "Angular_00:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular_01:serve:production"
+              "devServerTarget": "Angular_00:serve:production"
             }
           }
         },
@@ -125,18 +125,18 @@
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "Angular_01:serve",
+            "devServerTarget": "Angular_00:serve",
             "watch": false,
             "headless": true
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular_01:serve:production"
+              "devServerTarget": "Angular_00:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Angular_01"
+  "defaultProject": "Angular_00"
 }
